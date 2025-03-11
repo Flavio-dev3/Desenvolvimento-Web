@@ -37,57 +37,62 @@ for(c = 0;c <= xc;c++){
 
 
 
-
-/*var nn = 0;
+/*
+var nn = 0;
 var mm = 0;
 function nome (num1,num2,num3){
-
     if(num1 > num2 && num1 > num3 ){
-        mm = num1;
+        nn = num1
     }
     else if(num2 > num1 && num2 > num3){
-        mm = num2;
+        nn = num2
     }
     else if(num3 > num1 && num3 > num2){
-        mm = num3;
+        nn = num3
     }
 }
 function nomen (num1,num2,num3){
     if(num1 < num2 && num1 < num3){
-        mm = num1;
+        mm = num1
     }
     else if(num2 < num1 && num2 < num3){
         mm = num2
     }
-    else if(num3 < num1 && num3 < num2){
+    else if(num3 < num1 && num3 < num2){        
         mm = num3
     }
 }
 
-var nu1 = prompt("Digite um número: ");
-var nu2 = prompt("Digite outro número:");
-var nu3 = prompt("Digite mais um número: ");
+var nu1 = prompt("Digite o primeiro numero: ");
+var nu2 = prompt("Digite o segundo número:");
+var nu3 = prompt("Digite o terceiro número: ");
 nome(nu1,nu2,nu3);
-alert(`O número maior é ${mm}`);
+alert(`O número maior é ${nn}`);
 nomen(nu1,nu2,nu3);
 alert(`O número menor é ${mm}`);*/
-var lista = []
+/*var lista = []
 function aritmetica (){
     soma = 0
     for(var i = 0;i < lista.length; i++){
         soma = soma + lista[i]
     }
 return soma / lista.length
+}*/
+var mlk = 0
+var sald = 0
+var nome = prompt("Digite seu nome para continuar sua conta bancaria: ");
+alert(`${nome} seu atual saldo agr é $${sald} reais`);
+sald = parseFloat(prompt("Digite o valor para ser depositado: "));
+function depositar (){
+    if( sald <= 1000){
+        alert("Seu saldo foi depositado com sucesso!!!");
+    } 
+    else{
+        alert("não podeh meu!!!");
+    }
 }
- 
-function valor (){
-    var na = prompt("Insira o valor: ")
-    lista = lista.concat(na.split(",").map(Number))
-// concat pega os valores que tinha na lista antiga e adiciona o novo 
-}
 
-
-
+alert(`O saldo ${sald} foi depositado`);
 
 
 
